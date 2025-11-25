@@ -151,7 +151,7 @@ class Model():
                 sessionOptions.intra_op_num_threads = 1
 
                 self.models[mdl_name] = ort.InferenceSession(mdl_path, sess_options=sessionOptions,
-                                                             providers=["CPUExecutionProvider"])
+                                                             providers=["TensorrtExecutionProvider"])
 
                 self.model_inputs[mdl_name] = self.models[mdl_name].get_inputs()[0].shape[1]
                 self.model_outputs[mdl_name] = self.models[mdl_name].get_outputs()[0].shape[1]
