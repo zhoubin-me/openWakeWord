@@ -30,7 +30,6 @@ setuptools.setup(
     name="openwakeword",
     version="0.6.0",
     install_requires=[
-        'onnxruntime>=1.10.0,<2',
         'ai-edge-litert>=2.0.2,<3; platform_system == "Linux" or platform_system == "Darwin"',
         'speexdsp-ns>=0.1.2,<1; platform_system == "Linux"',
         'tqdm>=4.0,<5.0',
